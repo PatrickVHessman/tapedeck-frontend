@@ -56,3 +56,5 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+env: # Add environment variables here
+  VITE_CB_API_URL: "https://tapedeckapi-gmevaecbbxdwexck.canadacentral-01.azurewebsites.net/api/"
