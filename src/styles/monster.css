@@ -1,0 +1,144 @@
+.monsterHighlightContainer {
+    color: #FFF;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.monsterHighlightTop {
+    background: linear-gradient(135deg, transparent 14px, #3fbb9f 0) top left;
+    height: 1.5em
+}
+
+.monsterHighlightBottom {
+    background: linear-gradient(315deg, transparent 14px, #3fbb9f 0) top left;
+    height: 1.5em
+}
+
+.monsterHighlightBody {
+    background: linear-gradient(315deg, transparent 10px, #3fbb9f 2%, #3fbb9f 96.5%, transparent 10px);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em .5em;
+}
+
+.monsterHighlightHeader {
+    background: #3fbb9f;
+    text-align: center;
+}
+
+    .monsterHighlightHeader img {
+        width: 33px;
+        clip-path: inset(13%);
+    }
+
+.monsterHighlightBody img {
+    height: 100%;
+}
+
+.monsterDetail, .moveDetail {
+    padding: .5em;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+    margin-bottom: .5rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+    .monsterDetail a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+.monsterDetailNeutral, .moveDetailRight {
+    background: linear-gradient(315deg, transparent 10px, #9DACC2 0) top left;
+    color: #FFF;
+}
+
+.airDetail {
+    background: linear-gradient(315deg, transparent 10px, #206454 0) top left;
+    color: #FFF;
+}
+
+.astralDetail {
+    background: linear-gradient(315deg, transparent 10px, #373f67 0) top left;
+    color: #FFF;
+}
+
+.beastDetail {
+    background: linear-gradient(315deg, transparent 10px, #b0aa82 0) top left;
+    color: #FFF;
+}
+
+.earthDetail {
+    background: linear-gradient(315deg, transparent 10px, #6f3945 0) top left;
+    color: #FFF;
+}
+
+.fireDetail {
+    background: linear-gradient(315deg, transparent 10px, #d04d2f 0) top left;
+    color: #FFF;
+}
+
+.glassDetail {
+    background: linear-gradient(315deg, transparent 10px, #9dacc3 0) top left;
+    color: #FFF;
+}
+
+.glitterDetail {
+    background: linear-gradient(315deg, transparent 10px, #c355c1 0) top left;
+    color: #FFF;
+}
+
+.iceDetail {
+    background: linear-gradient(315deg, transparent 10px, #3471b2 0) top left;
+    color: #FFF;
+}
+
+.lightningDetail {
+    background: linear-gradient(315deg, transparent 10px, #d98a30 0) top left;
+    color: #FFF;
+}
+
+.metalDetail {
+    background: linear-gradient(315deg, transparent 10px, #78668a 0) top left;
+    color: #FFF;
+}
+
+.plantDetail {
+    background: linear-gradient(315deg, transparent 10px, #308245 0) top left;
+    color: #FFF;
+}
+
+.plasticDetail {
+    background: linear-gradient(315deg, transparent 10px, #b12031 0) top left;
+    color: #FFF;
+}
+
+.poisonDetail {
+    background: linear-gradient(315deg, transparent 10px, #7629db 0) top left;
+    color: #FFF;
+}
+
+.waterDetail {
+    background: linear-gradient(315deg, transparent 10px, #4648ce 0) top left;
+    color: #FFF;
+}
+
+.typelessDetail {
+    background: linear-gradient(315deg, transparent 10px, #CEE1EE 0) top left;
+}
+
+.descriptionCell {
+    height: auto;
+    overflow: visible !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    line-height: normal !important;
+}

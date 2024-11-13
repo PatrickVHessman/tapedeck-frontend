@@ -1,0 +1,234 @@
+@import url("./styles/animations.css");
+@import url("./styles/monster.css");
+@import url("./styles/tables.css");
+@import url("./styles/fusions.css");
+
+/* global style */
+@font-face {
+    font-family: "Neu5Land";
+    src: local("Neu5Land"), url("./assets/Neu5Land-Regular.ttf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Regular"), url("./assets/NotoSans-VariableFont_wdth,wght.ttf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "M PLUS";
+    src: local("M PLUS 1 SemiBold"), url("./assets/regular.MPLUS1-SemiBold-JP.ttf") format("opentype"); 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Atomic Marker";
+    src: local("Atomic Marker"), url("./assets/set-sail-studios-atomic-marker-regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+
+:root {
+    /*font-size: 24px;*/
+    --backgroundColor: #2B1C39;
+    --squareColor: #332244;
+    --squareSize: 1.35em;
+}
+
+.none {
+    display: none;
+}
+
+.noRightBorder {
+    border-right: none !important;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#footer {
+    background: rgba(171, 117, 232, 1);
+    text-align: center;
+    padding: .75em;
+    color: #FFF;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#footer a {
+    color: #FFF;
+}
+
+#menuButton {
+    margin-right: 1em;
+    max-width: 50px;
+    cursor: pointer;
+}
+
+#menu-appbar a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+#menu-appbar a:hover {
+    animation: glitch .5s infinite;
+}
+
+.clippedTopLeftCorner {
+    background: linear-gradient(225deg, transparent 42px, rgba(171, 117, 232, 1) 0) top left;
+}
+
+.clippedTopLeftCornerBootleg {
+    background: linear-gradient(225deg, transparent 42px, rgba(234, 66, 63, 1) 0) top left;
+}
+
+
+.cardHeader {
+    padding: 1em;
+    color: #FFF;
+}
+
+.cardSubheader {
+    padding: 0 1em .5em;
+    color: #FFF;
+}
+
+.cardSubheaderNormal {
+    background: linear-gradient(315deg, #FFF 0%, #FFF 58%, rgba(171, 117, 232, 1) 58%, rgba(171, 117, 232, 1) 100%);
+}
+
+.cardSubheaderBootleg {
+    background: linear-gradient(315deg, #FFF 0%, #FFF 58%, rgba(234, 66, 63, 1) 58%, rgba(234, 66, 63, 1) 100%);
+}
+
+.cardBody {
+    background: #FFF;
+    padding: 2em;
+    min-height: 70vh;
+}
+
+.contentCard {
+   box-shadow: -10px 10px;
+}
+
+#checkeredBg {
+    background-image: linear-gradient(45deg, #332244 25%, transparent 25%), linear-gradient(135deg, #332244 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #332244 75%), linear-gradient(135deg, transparent 75%, #332244 75%);
+    background-position: 0 0, 1.35em 0, 1.35em calc(-1 * 1.35em), 0 calc(-1 * 1.35em);
+    background-size: calc(2 * 1.35em) calc(2 * 1.35em);
+    transform: skew(15deg,0deg);
+    width: 500%;
+    height: 500%;
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    animation: slide 30s linear infinite;
+    animation-direction: reverse;
+    background-color: #2B1C39;
+}
+
+body {
+    background-color: #2B1C39;
+    font-family: 'Neu5Land', 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lato', 'Liberation Sans', 'Noto Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+    padding: 0 !important;
+    overflow: auto !important;
+}
+
+/* Monster list page */
+
+.monsterListItem {
+    background: #FFF;
+    position: relative;
+    border: #000 solid 4px;
+}
+
+    .monsterListItem:hover {
+        background: #3FBB9F;
+        color: #FFF;
+    }
+
+        .monsterListItem:hover a {
+            animation: clip-noise 0.75s;
+            color: #FFF;
+        }
+
+        .monsterListItem a {
+            color: #000;
+            text-decoration: none;
+        }
+
+/* Skew the container one way */
+.skew-neg {
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    
+}
+
+/* And the child another way */
+.skew-pos {
+    -webkit-transform: skewX(15deg);
+    -moz-transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -o-transform: skewY(3deg);
+    transform: skewX(15deg);
+}
+
+/* Move page*/
+
+.moveDetail {
+    color: #FFF;
+}
+
+.moveDetailLeft {
+    background: linear-gradient(135deg, transparent 10px, #9DACC2 0) top left;
+    color: #FFF;
+}
+
+.debuffCell {
+    background: rgba(234, 66, 63, 1);
+    color: #FFF;
+}
+
+.miscCell {
+    background: #9DACC2;
+    color: #FFF;
+}
+
+.buffCell {
+    background: #3fbb9f;
+    color: #FFF;
+}
+
+.transmuteCell {
+    background: rgba(171, 117, 232, 1);
+    color: #FFF;
+}
+
+/* Elemental Types page */
+.elementListItem {
+    background: #FFF;
+    position: relative;
+    border: #000 solid 4px;
+}
+
+    
+
+        .elementListItem:hover a {
+            animation: clip-noise 0.75s;
+        }
+
+    .elementListItem a {
+        color: #000;
+        text-decoration: none;
+    }

@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\components",
+    "\\components\\Canvas",
+    "\\models",
+    "\\pages",
+    "\\pages\\Auth",
+    "\\pages\\Fusions",
+    "\\routes"
+  ],
+  "SelectedNode": "\\vite-env.d.ts",
+  "PreviewInSolutionExplorer": false
+}

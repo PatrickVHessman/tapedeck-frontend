@@ -1,0 +1,93 @@
+.headerCell {
+    background: #CEE1EE;
+    color: #FFF;
+}
+
+.initialMove {
+    background: #9DACC2;
+    color: #FFF;
+}
+
+.upgradeMove {
+    background: #ab75e8;
+    color: #FFF;
+}
+
+.stickerMove {
+    background: #3fbb9f;
+    color: #FFF;
+}
+
+.airCell {
+    background: #206454;
+    color: #FFF;
+}
+
+.astralCell {
+    background: #373f67;
+    color: #FFF;
+}
+
+.beastCell {
+    background: #b0aa82;
+    color: #FFF;
+}
+
+.earthCell {
+    background: #6f3945;
+    color: #FFF;
+}
+
+.fireCell {
+    background: #d04d2f;
+    color: #FFF;
+}
+
+.glassCell {
+    background: #9dacc3;
+    color: #FFF;
+}
+
+.glitterCell {
+    background: #c355c1;
+    color: #FFF;
+}
+
+.iceCell {
+    background: #3471b2;
+    color: #FFF;
+}
+
+.lightningCell {
+    background: #d98a30;
+    color: #FFF;
+}
+
+.metalCell {
+    background: #78668a;
+    color: #FFF;
+}
+
+.plantCell {
+    background: #308245;
+    color: #FFF;
+}
+
+.plasticCell {
+    background: #b12031;
+    color: #FFF;
+}
+
+.poisonCell {
+    background: #7629db;
+    color: #FFF;
+}
+
+.waterCell {
+    background: #4648ce;
+    color: #FFF;
+}
+
+.typelessCell {
+    background: #CEE1EE;
+}

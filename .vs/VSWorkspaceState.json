@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Footer",
+    "\\src\\components\\TypeInteractionTable",
+    "\\src\\icons\\statusEffects",
+    "\\src\\icons\\types",
+    "\\src\\pages",
+    "\\src\\pages\\Monsters",
+    "\\src\\routes"
+  ],
+  "SelectedNode": "\\src\\main.css",
+  "PreviewInSolutionExplorer": false
+}
