@@ -61,7 +61,7 @@ const Monster = () => {
                         <div className="monsterHighlightBody">
                             
                         <img
-                            src={`/src/icons/statusEffects/${status.key}.png`}
+                            src={`/icons/statusEffects/${status.key}.png`}
                             style={{ display: "inline-flex" }}
                         />
                                 </div>

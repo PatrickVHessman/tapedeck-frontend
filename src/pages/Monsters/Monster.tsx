@@ -141,7 +141,7 @@ const Monster = () => {
 
     const loadImage = () => {
         const img = new Image();
-        const src: string = `/src/sprites/monsters/${monsterKey}.png`;
+        const src: string = `/sprites/monsters/${monsterKey?.toLowerCase()}.png`;
         img.src = src;
         if (img.complete) {
             img.src = src;
@@ -182,7 +182,7 @@ const Monster = () => {
         {`#${monster.bestiaryIndex >= 0 ? monster.bestiaryIndex : "???"} ${monster.name}`}
             </Typography>
             <img
-                src={`/src/icons/monsters/${monster.key}.png`}
+                src={`/icons/monsters/${monster.key.toLowerCase()}.png`}
                 style={{ display: "inline-block", margin: "0 .25rem 0 .5rem", width: "40px" }}
 
             />
@@ -194,7 +194,7 @@ const Monster = () => {
             return evos.map((x, i) => <><Link to={`/monsters/${x.replace(" ", "_")}`} onClick={() => {
                 window.location.href = `/monsters/${x.replace(" ", "_")}`;
             }} style={{ display: "flex", alignItems: "center" }}><div>{x}</div><img
-                src={`/src/icons/monsters/${x.replace(" ", "_")}.png`}
+                    src={`/icons/monsters/${x.toLowerCase().replace(" ", "_")}.png`}
                 style={{ margin: "0 0 0 .25rem", width: "25px" }}
 
             /></Link>{i != (evos.length - 1) ? <div style={{ marginRight: ".25rem" }}>,</div> : <></>}</>)
@@ -207,7 +207,7 @@ const Monster = () => {
             return evos.map((x, i) => <><Link to={`/monsters/${x.evolvedForm.replace(" ", "_")}`} onClick={() => {
                 window.location.href = `/monsters/${x.evolvedForm.replace(" ", "_")}`;
             }} style={{ display: "flex", alignItems: "center" }}><div>{x.evolvedForm}</div><img
-                src={`/src/icons/monsters/${x.evolvedForm.replace(" ", "_")}.png`}
+                    src={`/icons/monsters/${x.evolvedForm.toLowerCase().replace(" ", "_")}.png`}
                 style={{ margin: "0 0 0 .25rem", width: "25px" }}
 
             /></Link>{i != (evos.length - 1) ? <div style={{marginRight: ".25rem"} }>,</div> : <></>}</>)
@@ -231,7 +231,7 @@ const Monster = () => {
                         <img
                             ref={resultRef}
 
-                            src="/src/icons/question_icon.png"
+                            src="/icons/question_icon.png"
                             style={{ display: "inline-flex" }}
                         />
                         
@@ -249,7 +249,7 @@ const Monster = () => {
                         <Grid size={{ xs: 12, md: 7 }} >
                             <Link to={`/elementalTypes/${monster.elementalType}`} className={`monsterDetail ${monster.elementalType.toLowerCase()}Detail`}>
                                 <div>TYPE: {monster.elementalType}</div>  <img
-                                    src={`/src/icons/types/element_${monster.elementalType}.png`}
+                                    src={`/icons/types/element_${monster.elementalType.toLowerCase()}.png`}
                                     style={{ margin: "0 .25rem 0 .5rem", width: "25px" }}
 
                                 />

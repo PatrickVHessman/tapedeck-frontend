@@ -7,7 +7,7 @@ const HomeListItem = (props: { image: string, url: string, name: string }) => {
             <Link to={props.url} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <div className="skew-pos" style={{ display: "flex", padding: ".3em", alignItems: "center" }}>
                     <div style={{ marginRight: ".5em" }}>
-                        <img src={`${props.image ? props.image : "src/icons/question_icon.png"}`} style={{ maxHeight: "55px" }} />
+                        <img src={`${props.image ? props.image : "icons/question_icon.png"}`} style={{ maxHeight: "55px" }} />
                     </div>
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <h4 style={{ fontSize: "20px" }}>{props.name}</h4>

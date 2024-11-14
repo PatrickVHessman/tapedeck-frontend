@@ -365,31 +365,31 @@ const Fusions = () => {
                             {
 
                             }
-                                <img
-                                src={`src\\icons\\types\\element_${fusion.elementalTypes[0]}.png`}
+                            <img
+                                src={fusion.elementalTypes.length > 0 ? `/icons/types/element_${fusion.elementalTypes[0].toLowerCase()}.png` : ''}
                                 style={{ margin: "0 .25rem 0 .5rem" }}
                                 className={fusion.elementalTypes.length == 0 ? "none" : "fusionElementIcon"}
                                     />
                                     
                                     <img
-                                        src={`src\\icons\\types\\element_${fusion.elementalTypes[1]}.png`}
+                                src={fusion.elementalTypes.length > 1 ? `/icons/types/element_${fusion.elementalTypes[1].toLowerCase()}.png` : ''}
                                 className={fusion.elementalTypes.length > 1 ? "fusionElementIcon" : "none" }
                                     />
                                        
                             </div>
                             <div className="fusionComponentSprites">
                                 <img
-                                    src={`${monster1 ? "src\\sprites\\monsters\\" + monster1.replace(" ", "_") + ".gif" : "src\\icons\\question_icon.png"}`}
+                                src={`${monster1 ? "/sprites/monsters/" + monster1.toLowerCase().replace(" ", "_") + ".gif" : "/icons/question_icon.png"}`}
                                     style={{ display: "inline-flex" }}
                                     className={monster1 ? "" : "unselectedFusionMonster"}
                                 />
                                 <img ref={resultRef}
-                                    src="src\\assets\\static_150.gif"
+                                    src="/static_150.gif"
                                     id="resultImage"
                                     className={firstLoaded ? 'fusionResultImg' : 'blob'}
                                     />
                                 <img
-                                    src={`${monster2 ? "src\\sprites\\monsters\\" + monster2.replace(" ", "_") + ".gif" : "src\\icons\\question_icon.png"}`}
+                                    src={`${monster2 ? "/sprites/monsters/" + monster2.toLowerCase().replace(" ", "_") + ".gif" : "/icons/question_icon.png"}`}
                                     style={{ display: "inline-flex" }}
                                     className={monster2 ? "" : "unselectedFusionMonster"}
                                     />

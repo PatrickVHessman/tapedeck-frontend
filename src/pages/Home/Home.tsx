@@ -15,27 +15,30 @@ const Home = () => {
         {
             name: "Monsters",
             url: "/monsters",
-            image: "/src/sprites/monsters/SPRINGHEEL.gif"
+            image: "/sprites/monsters/springheel.gif"
         },
         {
             name: "Fusions",
             url: "/fusions",
-            image: "/src/icons/fusion_radar.png"
+
+
+
+            mage: "/icons/fusion_radar.png"
         },
         {
             name: "Moves",
             url: "/moves",
-            image: "/src/icons/statusEffects/locked_on.png"
+            image: "/icons/statusEffects/locked_on.png"
         },
         {
             name: "Elemental Types",
             url: "/statuses",
-            image: "/src/icons/statusEffects/astral_coating.png"
+            image: "/icons/statusEffects/astral_coating.png"
         },
         {
             name: "Status Effects",
             url: "/statuses",
-            image: "/src/icons/statusEffects/sleep.png"
+            image: "/icons/statusEffects/sleep.png"
         },
     ]
 

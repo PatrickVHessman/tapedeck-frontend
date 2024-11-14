@@ -91,7 +91,7 @@ const Monster = () => {
                         <Grid size={{ xs: 12, md: 5 }}>
                             <Link to={`/elementalTypes/${move.elementalType}`} className="moveDetail" style={{ background: getElementBg(move.elementalType) }}>
                                 <div style={{ marginLeft: ".75em"} }>TYPE: {move.elementalType}</div>  <img
-                                    src={`/src/icons/types/element_${move.elementalType}.png`}
+                                    src={`/icons/types/element_${move.elementalType.toLowerCase()}.png`}
                                     style={{ margin: "0 .25rem 0 .5rem", width: "25px" }}
 
                                 />

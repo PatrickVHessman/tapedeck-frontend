@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
+    "\\public\\sprites",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Footer",
-    "\\src\\components\\TypeInteractionTable",
+    "\\src\\components\\MonsterListItem",
+    "\\src\\components\\MoveTables",
     "\\src\\pages",
-    "\\src\\pages\\Monsters",
-    "\\src\\routes"
+    "\\src\\pages\\Fusions",
+    "\\src\\pages\\Moves"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\models",
   "PreviewInSolutionExplorer": false
 }
