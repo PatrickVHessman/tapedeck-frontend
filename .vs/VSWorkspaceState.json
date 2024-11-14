@@ -9,8 +9,9 @@
     "\\src\\components\\MoveTables",
     "\\src\\pages",
     "\\src\\pages\\Fusions",
+    "\\src\\pages\\Home",
     "\\src\\pages\\Moves"
   ],
-  "SelectedNode": "\\src\\models",
+  "SelectedNode": "\\src\\pages\\Home\\Home.tsx",
   "PreviewInSolutionExplorer": false
 }

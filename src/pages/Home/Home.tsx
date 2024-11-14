@@ -20,10 +20,7 @@ const Home = () => {
         {
             name: "Fusions",
             url: "/fusions",
-
-
-
-            mage: "/icons/fusion_radar.png"
+            image: "/icons/fusion_radar.png"
         },
         {
             name: "Moves",
