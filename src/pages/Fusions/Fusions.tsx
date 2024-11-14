@@ -225,7 +225,7 @@ const Fusions = () => {
                     setImageFrames(tempFrames);
                 }
             };
-            img.src = `src/${path}`;
+            img.src = `/${path}`;
         });
 
 
