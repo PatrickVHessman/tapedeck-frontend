@@ -49,6 +49,7 @@
     margin-bottom: .5rem;
     align-items: center;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
     .monsterDetail a {

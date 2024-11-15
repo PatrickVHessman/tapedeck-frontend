@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const MonsterListItem = (props: { monster: MonsterListItemClass }) => {
     return (
-        <Grid size={{ xs: 6, md: 3 }} className="skew-neg monsterListItem"  >
+        <Grid size={{ xs: 12, md: 3 }} className="skew-neg monsterListItem"  >
             <Link to={`/monsters/${props.monster.key}`} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div className="skew-pos" style={{ display: "flex", padding: ".3em", alignItems: "center" }}>
                 <div style={{marginRight: ".5em"} }>

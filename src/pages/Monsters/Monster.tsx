@@ -204,13 +204,13 @@ const Monster = () => {
 
     const evolvesTo = (evos: EvolvesTo[]) => {
         if (evos.length > 0) {
-            return evos.map((x, i) => <><Link to={`/monsters/${x.evolvedForm.replace(" ", "_")}`} onClick={() => {
+            return evos.map((x, i) => <div><Link to={`/monsters/${x.evolvedForm.replace(" ", "_")}`} onClick={() => {
                 window.location.href = `/monsters/${x.evolvedForm.replace(" ", "_")}`;
-            }} style={{ display: "flex", alignItems: "center" }}><div>{x.evolvedForm}</div><img
+            }} style={{ display: "inline-flex", alignItems: "center" }}><div>{x.evolvedForm}</div><img
                     src={`/icons/monsters/${x.evolvedForm.toLowerCase().replace(" ", "_")}.png`}
                 style={{ margin: "0 0 0 .25rem", width: "25px" }}
 
-            /></Link>{i != (evos.length - 1) ? <div style={{marginRight: ".25rem"} }>,</div> : <></>}</>)
+            /></Link>{i != (evos.length - 1) ? <div style={{marginRight: ".25rem", display: 'inline'} }>,</div> : <></>}</div>)
         }
         else return (<span>NONE</span>)
     }

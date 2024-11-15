@@ -21,7 +21,7 @@ const ElementListItem = (props: { element: string }) => {
             <Link to={`/elementalTypes/${props.element}`} style={{ display: "flex", alignItems: "center", justifyContent: "center" }} >
                 <div className="skew-pos" style={{ display: "flex", padding: ".3em", alignItems: "center" }}>
                     <div style={{ marginRight: ".5em" }}>
-                        <img src={`${props.element ? "/icons/types/element_" + props.element + ".png" : "icons/question_icon.png"}`} style={{ maxWidth: "55px", clipPath: "inset(13%)" }} />
+                        <img src={`${props.element ? "/icons/types/element_" + props.element.toLowerCase() + ".png" : "icons/question_icon.png"}`} style={{ maxWidth: "55px", clipPath: "inset(13%)" }} />
                     </div>
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <h4 style={{ fontSize: "20px" }}>{props.element}</h4>

@@ -135,6 +135,15 @@
     background-color: #2B1C39;
 }
 
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #checkeredBg {
+        height: 700%;
+        width: 700%;
+    }
+}
+
 body {
     background-color: #2B1C39;
     font-family: 'Neu5Land', 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lato', 'Liberation Sans', 'Noto Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
