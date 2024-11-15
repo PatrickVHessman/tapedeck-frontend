@@ -165,7 +165,7 @@ body {
     }
 
         .monsterListItem:hover a {
-            animation: clip-noise 0.75s;
+            animation: clip-noise 0.25s;
             color: #FFF;
         }
 

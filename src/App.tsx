@@ -1,16 +1,15 @@
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link as RouterLink } from 'react-router-dom';
 import { CssBaseline, AppBar, Toolbar, Typography, Menu, MenuItem, IconButton } from '@mui/material';
 import Routing from './routes/Routing';
-import React from 'react';
+import { useState, MouseEvent } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Helmet } from "react-helmet";
 import { Footer } from './components/Footer/Footer';
 
 const App = () => {
 
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
-    const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+    const handleMenu = (event: MouseEvent<HTMLElement>) => {
         setAnchorEl(event.currentTarget);
     };
 
@@ -54,13 +53,13 @@ const App = () => {
                           open={Boolean(anchorEl)}
                           onClose={handleClose}
                       >
-                          <MenuItem onClick={handleClose}><Link to="/home">Home</Link></MenuItem>
-                          <MenuItem onClick={handleClose}><Link to="/monsters">Monsters</Link></MenuItem>
-                          <MenuItem onClick={handleClose}><Link to="/fusions">Fusions</Link></MenuItem>
-                          <MenuItem onClick={handleClose}><Link to="/elementalTypes">Elemental Types</Link></MenuItem>
-                          <MenuItem onClick={handleClose}><Link to="/moves">Moves</Link></MenuItem>
-                          <MenuItem onClick={handleClose}><Link to="/statuses">Status Effects</Link></MenuItem>
-                          <MenuItem onClick={handleClose}><Link to="/acknowledgements">Acknowledgements</Link></MenuItem>
+                          <MenuItem onClick={handleClose} component={RouterLink} to="/">Home</MenuItem>
+                          <MenuItem onClick={handleClose} component={RouterLink} to="/monsters">Monsters</MenuItem>
+                          <MenuItem onClick={handleClose} component={RouterLink} to="/fusions">Fusions</MenuItem>
+                          <MenuItem onClick={handleClose} component={RouterLink} to="/elementalTypes">Elemental Types</MenuItem>
+                          <MenuItem onClick={handleClose} component={RouterLink} to="/moves">Moves</MenuItem>
+                          <MenuItem onClick={handleClose} component={RouterLink} to="/statuses">Status Effects</MenuItem>
+                          <MenuItem onClick={handleClose} component={RouterLink} to="/acknowledgements">Acknowledgements</MenuItem>
                       </Menu>
                   </div>
               </Toolbar>
