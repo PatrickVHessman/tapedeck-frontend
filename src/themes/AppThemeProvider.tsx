@@ -134,7 +134,7 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
                     Lightest: '#E5FFE5',
                 },
                 background: {
-                    default: '#FCFBFA',
+                    default: 'rgba(171, 117, 232, 1)',
                     opposite: '#000000',
                     paper: '#FCFCFC',
                 },
