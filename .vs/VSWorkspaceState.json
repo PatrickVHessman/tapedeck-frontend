@@ -3,7 +3,6 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\ContentCard",
     "\\src\\components\\Footer",
     "\\src\\components\\HomeListItem",
     "\\src\\components\\SpeciesTableCell",
@@ -12,6 +11,5 @@
     "\\src\\styles",
     "\\src\\themes"
   ],
-  "SelectedNode": "\\src\\components\\SpeciesTableCell\\SpeciesTableCell.tsx",
   "PreviewInSolutionExplorer": false
 }
