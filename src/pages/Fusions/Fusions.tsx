@@ -380,7 +380,7 @@ const Fusions = () => {
                             <div className="fusionComponentSprites">
                                 <img
                                 src={`${monster1 ? "/sprites/monsters/" + monster1.toLowerCase().replace(" ", "_") + ".gif" : "/icons/question_icon.png"}`}
-                                    style={{ display: "inline-flex" }}
+                                style={{ display: "inline-flex", gridArea: "mon1" }}
                                     className={monster1 ? "" : "unselectedFusionMonster"}
                                 />
                                 <img ref={resultRef}
@@ -389,8 +389,8 @@ const Fusions = () => {
                                     className={firstLoaded ? 'fusionResultImg' : 'blob'}
                                     />
                                 <img
-                                    src={`${monster2 ? "/sprites/monsters/" + monster2.toLowerCase().replace(" ", "_") + ".gif" : "/icons/question_icon.png"}`}
-                                    style={{ display: "inline-flex" }}
+                                src={`${monster2 ? "/sprites/monsters/" + monster2.toLowerCase().replace(" ", "_") + ".gif" : "/icons/question_icon.png"}`}
+                                style={{ display: "inline-flex", gridArea: "mon2" }}
                                     className={monster2 ? "" : "unselectedFusionMonster"}
                                     />
                             </div>
@@ -398,7 +398,7 @@ const Fusions = () => {
 
                         </div>
                 </Grid>
-                <Grid size={{ xs: 6, md: 6 }} >
+                <Grid size={{ xs: 12, md: 6 }} >
                     <FormGroup row>
                         <FormControlLabel
                             value={includeSecret}

@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Footer",
     "\\src\\components\\HomeListItem",
     "\\src\\components\\SpeciesTableCell",
     "\\src\\pages",
+    "\\src\\pages\\Fusions",
     "\\src\\pages\\Moves",
     "\\src\\styles",
     "\\src\\themes"
   ],
+  "SelectedNode": "\\src\\styles\\fusions.css",
   "PreviewInSolutionExplorer": false
 }
