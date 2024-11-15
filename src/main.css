@@ -77,6 +77,10 @@
     text-decoration: none;
 }
 
+#navHeader {
+    background: rgba(171, 117, 232, 1);
+}
+
 
 #menu-appbar a:hover {
     animation: glitch .5s infinite;

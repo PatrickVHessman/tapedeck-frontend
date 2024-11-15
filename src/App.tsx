@@ -22,7 +22,7 @@ const App = () => {
               <meta charSet="utf-8" />
               <title>Home - Tapedeck</title>
           </Helmet>
-          <AppBar position="static" style={{ marginBottom: ".6em", paddingRight: "0" }}>
+          <AppBar position="static" style={{ marginBottom: ".6em", paddingRight: "0" }} id="navHeader">
               <Toolbar>
                   <IconButton
                       size="large"
