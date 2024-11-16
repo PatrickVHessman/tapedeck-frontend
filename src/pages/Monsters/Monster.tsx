@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Typography, Select, SelectChangeEvent, OutlinedInput, InputLabel, MenuItem, FormControl, Grid2 as Grid, RadioGroup, Divider } from '@mui/material';
 import MoveTable from '@/components/MoveTables/MoveTable';
+
 import Statblock from '@/components/Statblock/Statblock';
 import ContentCard from '@/components/ContentCard/ContentCard';
 // @ts-expect-error
@@ -10,6 +11,7 @@ import workerStr from "@/gifWorker.js";
 import { Link, useParams } from 'react-router-dom';
 import { BootlegSpecies, EvolvesTo } from '../../models/species';
 import { Helmet } from 'react-helmet';
+import MovesPageMoveTable from '../../components/MoveTables/MovesPageMoveTable';
 
 
 const Monster = () => {
@@ -305,15 +307,17 @@ const Monster = () => {
                 </Grid>
                 </Grid>
 
-                <Divider sx={{ marginTop: "1.5em" }} />
+            <Divider textAlign="left"><h3>Moveset</h3></Divider>
 
             <Grid container spacing={3}>
-                <Grid size={{ xs: 12, md: 6 }} >
-                    <h3>Moveset</h3>
-                    <MoveTable moves={[...new Set([...monster.moves.learnedMoves, ...monster.moves.stickerMoves])]} monSelected={monster.name != ""} selectMessage="Select monster" noResultsMessage="No moves found" />
+                <Grid size={{ xs: 12, md: 12 }} >
+                    <MovesPageMoveTable moves={[...new Set([...monster.moves.learnedMoves, ...monster.moves.stickerMoves])]} selectMessage="Select monster" noResultsMessage="No moves found" />
                 </Grid>
-                <Grid size={{ xs: 12, md: 6 }}>
-                    <h3>Stats</h3>
+            </Grid>
+            <Divider textAlign="left"><h3>Base Stats</h3></Divider>
+
+            <Grid container spacing={3}>
+                <Grid size={{ xs: 12, md: 12 }}>
                     <Statblock stats={monster.stats} />
                 </Grid>
             </Grid>

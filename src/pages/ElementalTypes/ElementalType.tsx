@@ -43,7 +43,7 @@ const ElementalType = () => {
                 {element.name}
             </Typography>
             <img
-                src={`/icons/types/element_${element.name}.png`}
+                src={`/icons/types/element_${element.name.toLowerCase()}.png`}
                 style={{ display: "inline-block", margin: "0 .25rem 0 .5rem", width: "40px" }}
 
             />

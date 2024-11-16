@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\HomeListItem",
-    "\\src\\components\\SpeciesTableCell",
+    "\\src\\components\\MoveTables",
     "\\src\\pages",
-    "\\src\\pages\\Fusions",
-    "\\src\\pages\\Moves",
+    "\\src\\pages\\ElementalTypes",
+    "\\src\\pages\\Monsters",
+    "\\src\\pages\\Statuses",
     "\\src\\styles",
     "\\src\\themes"
   ],
-  "SelectedNode": "\\src\\styles\\fusions.css",
+  "SelectedNode": "\\src\\pages\\Monsters\\Monster.tsx",
   "PreviewInSolutionExplorer": false
 }
