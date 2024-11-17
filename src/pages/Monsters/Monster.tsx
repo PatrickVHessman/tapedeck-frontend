@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { Typography, Select, SelectChangeEvent, OutlinedInput, InputLabel, MenuItem, FormControl, Grid2 as Grid, RadioGroup, Divider } from '@mui/material';
-import MoveTable from '@/components/MoveTables/MoveTable';
-
 import Statblock from '@/components/Statblock/Statblock';
 import ContentCard from '@/components/ContentCard/ContentCard';
 // @ts-expect-error
