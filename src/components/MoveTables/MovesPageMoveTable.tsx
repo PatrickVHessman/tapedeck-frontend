@@ -55,9 +55,13 @@ const columns: GridColDef[] = [
     { field: 'description', headerName: 'Description', headerAlign: 'center', align: "center", flex: 4, cellClassName: "descriptionCell", display: "flex" },
 ];
 
-const paginationModel = { page: 0, pageSize: 50 };
 
-const MovesPageMoveTable = (props: { moves: MoveView[] }) => {
+
+const MovesPageMoveTable = (props: { moves: MoveView[], pageSize: number }) => {
+
+    const paginationModel = {
+        page: 0, pageSize: props.pageSize
+    };
 
     const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
     const [value, setValue] = useState<MovePopoverView>();

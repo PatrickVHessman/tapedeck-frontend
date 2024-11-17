@@ -63,7 +63,7 @@ const Monster = () => {
                 const imageData = ctx.getImageData(0, 0, 200, 200);
                 const data = imageData.data;
 
-                
+
                 for (let i = 0; i < data.length; i += 4) {
                     if (bootlegType != "None") {
                         const resIndex: number = monster.swapColorsRgba.findIndex(x => x.r8 == data[i] && x.g8 == data[i + 1] && x.b8 == data[i + 2]);
@@ -73,13 +73,13 @@ const Monster = () => {
                             imageData.data[i + 2] = monster.recolorsRgba[resIndex].b8;
                         }
                     }
-                        if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0) {
-                            imageData.data[i] = 1;
-                            imageData.data[i + 1] = 1;
-                            imageData.data[i + 2] = 1;
-                        }
-                    } 
-                
+                    if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0) {
+                        imageData.data[i] = 1;
+                        imageData.data[i + 1] = 1;
+                        imageData.data[i + 2] = 1;
+                    }
+                }
+
 
                 ctx.putImageData(imageData, 0, 0);
 
@@ -91,16 +91,16 @@ const Monster = () => {
             }
         }
         gif.on("finished", (blob: Blob | MediaSource) => {
-            
+
             const url = URL.createObjectURL(blob);
             // @ts-expect-error
             resultRef.current.src = url;
 
-            });
+        });
 
-            gif.render();
-        }
-    
+        gif.render();
+    }
+
 
     const fetchBootlegListData = async () => {
         await fetch(`${apiUrl}ElementalTypes/GetElementalTypesDropdown`, {
@@ -179,16 +179,16 @@ const Monster = () => {
     }
 
     const header = (
-        <div style={{display: "flex", alignItems: "center"} }>
+        <div style={{ display: "flex", alignItems: "center" }}>
             <Typography variant="h1" style={{ display: "inline-block" }}>
-        {`#${monster.bestiaryIndex >= 0 ? monster.bestiaryIndex : "???"} ${monster.name}`}
+                {`#${monster.bestiaryIndex >= 0 ? monster.bestiaryIndex : "???"} ${monster.name}`}
             </Typography>
             <img
                 src={`/icons/monsters/${monster.key.toLowerCase()}.png`}
                 style={{ display: "inline-block", margin: "0 .25rem 0 .5rem", width: "40px" }}
 
             />
-    </div>
+        </div>
     );
 
     const evolvesFrom = (evos: string[]) => {
@@ -197,9 +197,9 @@ const Monster = () => {
                 window.location.href = `/monsters/${x.replace(" ", "_")}`;
             }} style={{ display: "flex", alignItems: "center" }}><div>{x}</div><img
                     src={`/icons/monsters/${x.toLowerCase().replace(" ", "_")}.png`}
-                style={{ margin: "0 0 0 .25rem", width: "25px" }}
+                    style={{ margin: "0 0 0 .25rem", width: "25px" }}
 
-            /></Link>{i != (evos.length - 1) ? <div style={{ marginRight: ".25rem" }}>,</div> : <></>}</>)
+                /></Link>{i != (evos.length - 1) ? <div style={{ marginRight: ".25rem" }}>,</div> : <></>}</>)
         }
         else return (<span>NONE</span>)
     }
@@ -210,12 +210,18 @@ const Monster = () => {
                 window.location.href = `/monsters/${x.evolvedForm.replace(" ", "_")}`;
             }} style={{ display: "inline-flex", alignItems: "center" }}><div>{x.evolvedForm}</div><img
                     src={`/icons/monsters/${x.evolvedForm.toLowerCase().replace(" ", "_")}.png`}
-                style={{ margin: "0 0 0 .25rem", width: "25px" }}
+                    style={{ margin: "0 0 0 .25rem", width: "25px" }}
 
-            /></Link>{i != (evos.length - 1) ? <div style={{marginRight: ".25rem", display: 'inline'} }>,</div> : <></>}</div>)
+                /></Link>{i != (evos.length - 1) ? <div style={{ marginRight: ".25rem", display: 'inline' }}>,</div> : <></>}</div>)
         }
         else return (<span>NONE</span>)
     }
+
+    const Habitats = () => (<div>
+        <Typography typography="h3">Habitats</Typography> <ul>
+            {monster.habitats.map((x, i) => <li key={i}>{x}</li>)}
+        </ul>
+    </div>);
 
     return (
         <ContentCard header={header} bootleg={bootlegType != "None"}>
@@ -226,25 +232,25 @@ const Monster = () => {
             <Grid container spacing={3}>
                 <Grid size={{ xs: 12, md: 6 }} >
                     <Grid container spacing={2}>
-                        <Grid size={{ xs: 12, md: 5 }} style={{display: "flex"} }>
-                    <div className="monsterHighlightContainer">
-                        <div className="monsterHighlightBody">
-                            
-                        <img
-                            ref={resultRef}
+                        <Grid size={{ xs: 12, md: 5 }} style={{ display: "flex" }}>
+                            <div className="monsterHighlightContainer">
+                                <div className="monsterHighlightBody">
 
-                            src="/icons/question_icon.png"
-                            style={{ display: "inline-flex" }}
-                        />
-                        
-                        <div className="monsterHighlightHeader">
-                            <Typography variant="body1" style={{ fontWeight: 500, display: "inline-block", fontSize: "1.2rem" }}>
-                                {`"${monster.description}"`}
-                            </Typography>
-                           
+                                    <img
+                                        ref={resultRef}
+
+                                        src="/icons/question_icon.png"
+                                        style={{ display: "inline-flex" }}
+                                    />
+
+                                    <div className="monsterHighlightHeader">
+                                        <Typography variant="body1" style={{ fontWeight: 500, display: "inline-block", fontSize: "1.2rem" }}>
+                                            {`"${monster.description}"`}
+                                        </Typography>
+
                                     </div>
-                                
-                                
+
+
                                 </div>
                             </div>
                         </Grid>
@@ -271,7 +277,7 @@ const Monster = () => {
 
                             </div>
                             <RadioGroup row style={{ marginTop: ".75rem" }}>
-                                <FormControl sx={{flexGrow: 1 }}>
+                                <FormControl sx={{ flexGrow: 1 }}>
                                     <InputLabel color="warning">Bootleg Type</InputLabel>
                                     <Select
                                         value={bootlegType}
@@ -292,33 +298,27 @@ const Monster = () => {
                                 </FormControl>
 
                             </RadioGroup>
+
+                        </Grid>
+                        <div>
+                            <Typography typography="h3">Description</Typography>
+                            {monster.bestiaryBios.map((x, i) => <p key={i}>{x}</p>)}
+                        </div>
+                        {monster.habitats.length > 0 ? <Habitats /> : <></>}
                     </Grid>
+
                 </Grid>
-                    
-                    </Grid>
-                
+
                 <Grid size={{ xs: 12, md: 6 }}>
-                    <div>
-                        <h3 style={{ marginTop: "0" }}>Description</h3>
-                        {monster.bestiaryBios.map((x, i) => <p key={i}>{x}</p>)}
-                    </div>
-               
-                    
-                </Grid>
-                </Grid>
-
-            <Divider textAlign="left"><h3>Moveset</h3></Divider>
-
-            <Grid container spacing={3}>
-                <Grid size={{ xs: 12, md: 12 }} >
-                    <MovesPageMoveTable moves={[...new Set([...monster.moves.learnedMoves, ...monster.moves.stickerMoves])]} selectMessage="Select monster" noResultsMessage="No moves found" />
+                    <Typography typography="h3">Base Stats</Typography>
+                    <Statblock stats={monster.stats} />
                 </Grid>
             </Grid>
-            <Divider textAlign="left"><h3>Base Stats</h3></Divider>
 
+            <Divider textAlign="left" style={{ marginBottom: "1em" }}><Typography typography="h3">Moveset</Typography></Divider>
             <Grid container spacing={3}>
-                <Grid size={{ xs: 12, md: 12 }}>
-                    <Statblock stats={monster.stats} />
+                <Grid size={{ xs: 12, md: 12 }} >
+                    <MovesPageMoveTable moves={[...new Set([...monster.moves.learnedMoves, ...monster.moves.stickerMoves])]} pageSize={25} />
                 </Grid>
             </Grid>
         </ContentCard>

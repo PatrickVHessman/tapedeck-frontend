@@ -54,7 +54,7 @@ const Moves = () => {
                 </ul>
                 <p>Each move is classified as either active or passive. <strong>Active moves</strong> require a turn to use, while <strong>Passive moves</strong> automatically trigger under specific conditions during battle.</p>
             </div>
-            <MovesPageMoveTable moves={moveList} />
+            <MovesPageMoveTable moves={moveList} pageSize={50} />
         </ContentCard>
     );
 };

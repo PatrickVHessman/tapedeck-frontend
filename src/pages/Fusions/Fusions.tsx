@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef} from 'react';
-import { Typography, Select, SelectChangeEvent, OutlinedInput, InputLabel, MenuItem, FormControl, Switch, FormGroup, FormControlLabel, TextField, Button, Grid2 as Grid, RadioGroup } from '@mui/material';;
+import { Typography, Select, SelectChangeEvent, OutlinedInput, InputLabel, MenuItem, FormControl, Switch, FormGroup, FormControlLabel, TextField, Button, Grid2 as Grid, RadioGroup, Divider } from '@mui/material';;
 import { DropdownMenuItem, Fusion, ImageObj, NodeFrame } from '@/models/fusion';
 import { elementColors, baseFusionRgb } from '@/consts';
 import MoveTable from '@/components/MoveTables/MoveTable';
@@ -354,7 +354,7 @@ const Fusions = () => {
                 <meta charSet="utf-8" />
                 <title>Fusions - Tapedeck</title>
             </Helmet>
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
                 <Grid size={{ xs: 12, md: 6 }} >
                     <div className="fusionHighlightBody" style={{ background: fusion.highlightBg }}>
 
@@ -396,9 +396,8 @@ const Fusions = () => {
                             </div>
 
 
-                        </div>
-                </Grid>
-                <Grid size={{ xs: 12, md: 6 }} >
+                    </div>
+                    <div>
                     <FormGroup row>
                         <FormControlLabel
                             value={includeSecret}
@@ -484,18 +483,19 @@ const Fusions = () => {
                                 color="secondary"
                                 onClick={reset}>RESET</Button>
                         </FormControl>
-                    </FormGroup></Grid>
-
-                
-                <Grid size={{ xs: 12, md: 6 }} >
-                    <h3>Moveset</h3>
-                    <MoveTable moves={[...new Set([...fusion.moves.learnedMoves, ...fusion.moves.stickerMoves])]} monSelected={fusion.monsterName != ""} selectMessage="Select monsters for fusion" noResultsMessage="No moves found" />
+                        </FormGroup>
+                    </div>
                 </Grid>
-                <Grid size={{ xs: 12, md: 6 }}>
-                    <h3>Stats</h3>
+                <Grid size={{ xs: 12, md: 6 }} >
+                    
+                    <Typography typography="h3">Base Stats</Typography>
                     <Statblock stats={fusion.fusionStats} />
                 </Grid>
             </Grid>
+            <Divider textAlign="left" style={{ marginBottom: "1em", marginTop: "1em" }}><Typography typography="h3">Moveset</Typography></Divider>
+                    <MoveTable moves={[...new Set([...fusion.moves.learnedMoves, ...fusion.moves.stickerMoves])]} monSelected={fusion.monsterName != ""} selectMessage="Select monsters for fusion" noResultsMessage="No moves found" />
+                    
+            
         </ContentCard>
   );
 };

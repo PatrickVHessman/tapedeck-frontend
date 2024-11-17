@@ -1,10 +1,8 @@
 
 import { styled } from '@mui/material/styles';
 import { MoveView } from '../../models/moves';
-import { Paper, Box, Popover, Typography } from '@mui/material';
+import { Paper, Box } from '@mui/material';
 import { DataGrid, GridCellParams, GridColDef, GridEventListener } from '@mui/x-data-grid';
-import { useState } from 'react';
-import { MovePopoverView } from '../../models/moves';
 
 const StyledGridOverlay = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -70,48 +68,12 @@ const columns: GridColDef[] = [
         headerAlign: 'center',
         align: "center",
     },
+    { field: 'description', headerName: 'Description', headerAlign: 'center', align: "center", flex: 4, cellClassName: "descriptionCell", display: "flex" }
 ];
 
 const paginationModel = { page: 0, pageSize: 25 };
 
 const MoveTable = (props: { moves: MoveView[], monSelected: boolean, selectMessage?: string, noResultsMessage?: string }) => {
-
-    const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
-    const [value, setValue] = useState<MovePopoverView>();
-
-    const apiUrl = import.meta.env.VITE_CB_API_URL;
-
-    const fetchMovePopoverData = async (key: string) => {
-        await fetch(`${apiUrl}Moves/GetMoveByKey?key=${key}`, {
-            method: 'GET',
-        })
-            .then((res) => {
-                return res.text()
-            })
-            .then((data) => {
-                let res = JSON.parse(data) as unknown as MovePopoverView;
-                setValue(res);
-            })
-            .catch((error) => {
-                console.log(error)
-            });
-    }
-
-    const handlePopoverOpen = async (event: React.MouseEvent<HTMLElement>) => {
-        if (event.currentTarget.dataset.field == "name") {
-            const id = event.currentTarget.parentElement!.dataset.id!;
-            if (id != undefined) await fetchMovePopoverData(id);
-            // @ts-expect-error
-            setAnchorEl(event.target);
-        }
-        
-    };
-
-    const handlePopoverClose = () => {
-        setAnchorEl(null);
-    };
-
-    const open = Boolean(anchorEl);
 
     const handleRowClick: GridEventListener<'rowClick'> = (
         params, // GridRowParams
@@ -175,34 +137,11 @@ const MoveTable = (props: { moves: MoveView[], monSelected: boolean, selectMessa
                         variant: 'skeleton',
                         noRowsVariant: 'skeleton',
                     },
-                    cell: {
-                        onMouseEnter: handlePopoverOpen,
-                        onMouseLeave: handlePopoverClose,
-                    },
                 }}
                 slots={{ noRowsOverlay: CustomNoRowsOverlay, }}
                     disableRowSelectionOnClick={true}
                     onRowClick={handleRowClick}
                 />
-                <Popover
-                    sx={{
-                        pointerEvents: 'none',
-                    }}
-                    open={open}
-                    anchorEl={anchorEl}
-                    anchorOrigin={{
-                        vertical: 'bottom',
-                        horizontal: 'left',
-                    }}
-                    transformOrigin={{
-                        vertical: 'top',
-                        horizontal: 'left',
-                    }}
-                    onClose={handlePopoverClose}
-                    disableRestoreFocus
-                >
-                    <Typography sx={{ p: 1 }}>{`${value?.description}`}</Typography>
-                </Popover>
             </Paper>
             
             </>

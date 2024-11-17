@@ -9,11 +9,11 @@ const ElementListItem = (props: { element: string }) => {
                 {`
                 #${props.element}:hover {
                     background: ${elementColors[props.element.toLowerCase()]};
-                
+                    animation: staticBgHover 0.35s;
     }
 
     #${props.element}:hover a {
-            animation: clip-noise 0.75s;
+            animation: clip-noise 0.25s;
             color: #FFF;
         }
                 ` }

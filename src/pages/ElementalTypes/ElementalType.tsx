@@ -80,7 +80,7 @@ const ElementalType = () => {
             
 
             <Divider textAlign="left"><h3>Moves</h3></Divider>
-            <MovesPageMoveTable moves={element.moves} />
+            <MovesPageMoveTable moves={element.moves} pageSize={25} />
         </ContentCard>
     );
 };
