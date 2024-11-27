@@ -122,6 +122,7 @@ const Monsters = () => {
                     label="Include Secret Monsters"
                     labelPlacement="end"
                     onChange={handleSecretSwitch}
+                    color="secondary"
                 />
                 <FormControlLabel
                     value={includeDlc}

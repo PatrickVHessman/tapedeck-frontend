@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
-    "\\src\\assets",
     "\\src\\components",
     "\\src\\components\\ElementListItem",
     "\\src\\components\\Footer",
     "\\src\\models",
     "\\src\\pages",
-    "\\src\\pages\\Fusions"
+    "\\src\\pages\\Fusions",
+    "\\src\\pages\\Monsters",
+    "\\src\\themes"
   ],
+  "SelectedNode": "\\src\\pages\\Monsters\\Monsters.tsx",
   "PreviewInSolutionExplorer": false
 }

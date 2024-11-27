@@ -1,11 +1,9 @@
 import { PaletteColorOptions, ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { useAppSelector } from '@/app/store';
-import { PaletteMode } from '@mui/material';
-import React from 'react';
+import { CSSProperties, FC, ReactNode } from 'react';
 import type { } from '@mui/x-data-grid/themeAugmentation';
 
 type Props = {
-  children?: React.ReactNode;
+  children?: ReactNode;
 };
 
 declare module '@mui/material/styles' {
@@ -41,36 +39,36 @@ declare module '@mui/material/styles' {
     Red: TypeColor;
     Green: TypeColor;
     bootleg?: PaletteColorOptions;
-  }
+    }
 
   interface TypeBackground {
     opposite: string;
   }
   interface TypographyVariants {
-    CTA1: React.CSSProperties;
-    CTA2: React.CSSProperties;
-    CTA3: React.CSSProperties;
-    body3: React.CSSProperties;
-    body4: React.CSSProperties;
-    Body1: React.CSSProperties;
-    Body2: React.CSSProperties;
-    Body3: React.CSSProperties;
-    Body1Medium: React.CSSProperties;
-    Body1SemiBold: React.CSSProperties;
+    CTA1: CSSProperties;
+    CTA2: CSSProperties;
+    CTA3: CSSProperties;
+    body3: CSSProperties;
+    body4: CSSProperties;
+    Body1: CSSProperties;
+    Body2: CSSProperties;
+    Body3: CSSProperties;
+    Body1Medium: CSSProperties;
+    Body1SemiBold: CSSProperties;
   }
 
   // allow configuration using `createTheme`
   interface TypographyVariantsOptions {
-    CTA1?: React.CSSProperties;
-    CTA2?: React.CSSProperties;
-    CTA3?: React.CSSProperties;
-    body3?: React.CSSProperties;
-    body4?: React.CSSProperties;
-    Body1?: React.CSSProperties;
-    Body2?: React.CSSProperties;
-    Body3?: React.CSSProperties;
-    Body1Medium?: React.CSSProperties;
-    Body1SemiBold?: React.CSSProperties;
+    CTA1?: CSSProperties;
+    CTA2?: CSSProperties;
+    CTA3?: CSSProperties;
+    body3?: CSSProperties;
+    body4?: CSSProperties;
+    Body1?: CSSProperties;
+    Body2?: CSSProperties;
+    Body3?: CSSProperties;
+    Body1Medium?: CSSProperties;
+    Body1SemiBold?: CSSProperties;
   }
 }
 declare module '@mui/material/Typography' {
@@ -87,12 +85,11 @@ declare module '@mui/material/Typography' {
     Body1SemiBold: true;
   }
 }
-export const AppThemeProvider: React.FC<Props> = ({ children }) => {
-  const mode = useAppSelector((state) => state.user.mode);
+export const AppThemeProvider: FC<Props> = ({ children }) => {
     var theme = responsiveFontSizes(
         createTheme({
             palette: {
-                mode: mode as PaletteMode,
+                mode: "light",
                 primary: {
                     main: 'rgba(171, 117, 232, 1)',
                 },
