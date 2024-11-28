@@ -44,6 +44,8 @@ const Statuses = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Status Effects - Tapedeck</title>
+                <link rel="canonical" href="https://tapedeck.top/statuses" />
+                <meta name="description" content="In Cassette Beasts, Status Effects are unique conditions that can be applied to Monsters through different Moves, each affecting them in distinct ways." />
             </Helmet>
             <div>
                 <p><strong>Status Effects</strong> are unique conditions that can be applied to <Link to="/monsters">Monsters</Link> through different <Link to="/moves">Moves</Link>, each affecting them in distinct ways. There are four main types of status effects:</p>

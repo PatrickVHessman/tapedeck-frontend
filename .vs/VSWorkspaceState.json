@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\ElementListItem",
-    "\\src\\components\\Footer",
-    "\\src\\models",
+    "\\src\\components\\Statblock",
     "\\src\\pages",
-    "\\src\\pages\\Fusions",
-    "\\src\\pages\\Monsters",
-    "\\src\\themes"
+    "\\src\\pages\\Acknowledgements",
+    "\\src\\pages\\ElementalTypes",
+    "\\src\\pages\\Home",
+    "\\src\\pages\\Statuses"
   ],
-  "SelectedNode": "\\src\\pages\\Monsters\\Monsters.tsx",
+  "SelectedNode": "\\src\\pages\\Statuses\\Statuses.tsx",
   "PreviewInSolutionExplorer": false
 }

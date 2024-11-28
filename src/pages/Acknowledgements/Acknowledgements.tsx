@@ -12,6 +12,8 @@ const Acknowledgements = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Acknowledgements and Credits - Tapedeck</title>
+                <link rel="canonical" href="https://tapedeck.top/acknowledgements/" />
+                <meta name="og:title" content="Acknowledgements and Credits - Tapedeck" />
             </Helmet>
             <div>
                 <p>This project would not have been possible without the following projects, utilities and individuals:</p>

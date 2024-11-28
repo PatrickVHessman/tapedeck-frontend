@@ -226,6 +226,10 @@ const Monster = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>{monster.name} - Tapedeck</title>
+                <link rel="canonical" href={`https://tapedeck.top/monsters/${monster.key}`} />
+                <meta name="description" content={monster.bestiaryBios[0]} />
+                <meta name="og:description" content={monster.bestiaryBios[0]} />
+                <meta name="og:title" content={`${monster.name} - Tapedeck`} />
             </Helmet>
             <Grid container spacing={3}>
                 <Grid size={{ xs: 12, md: 6 }} >

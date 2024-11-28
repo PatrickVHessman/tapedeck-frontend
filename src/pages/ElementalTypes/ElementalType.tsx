@@ -56,6 +56,8 @@ const ElementalType = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>{element.name} - Tapedeck</title>
+                <link rel="canonical" href={`https://tapedeck.top/elementalTypes/${element.name}`} />
+                <meta name="og:title" content={`${element.name} - Tapedeck`} />
             </Helmet>
             <Divider textAlign="left"><h3>Species</h3></Divider>
             <Grid container spacing={2} style={{ padding: ".75em" }}>

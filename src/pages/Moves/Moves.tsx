@@ -43,6 +43,10 @@ const Moves = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Moves - Tapedeck</title>
+                <link rel="canonical" href="https://tapedeck.top/moves" />
+                <meta name="description" content="In Cassette Beasts, players have a range of moves to choose from in battle." />
+                <meta name="og:description" content="In Cassette Beasts, players have a range of moves to choose from in battle." />
+                <meta name="og:title" content="Moves - Tapedeck" />
             </Helmet>
             <div>
                 <p>

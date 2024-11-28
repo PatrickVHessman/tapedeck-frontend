@@ -353,6 +353,10 @@ const Fusions = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Fusions - Tapedeck</title>
+                <link rel="canonical" href="https://tapedeck.top/fusions" />
+                <meta name="description" content="Generate and view monster fusions from the video game Cassette Beasts." />
+                <meta name="og:description" content="Generate and view monster fusions from the video game Cassette Beasts." />
+                <meta name="og:title" content="Fusions - Tapedeck" />
             </Helmet>
             <Grid container spacing={3}>
                 <Grid size={{ xs: 12, md: 6 }} >

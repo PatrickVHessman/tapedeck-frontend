@@ -110,6 +110,10 @@ const Monsters = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Monsters - Tapedeck</title>
+                <link rel="canonical" href="https://tapedeck.top/monsters" />
+                <meta name="description" content="Monster species of the video game Cassette Beasts" />
+                <meta name="og:description" content="Monster species of the video game Cassette Beasts" />
+                <meta name="og:title" content="Monsters - Tapedeck" />
             </Helmet>
             <p>In <em>Cassette Beasts</em>, each team member transforms into a unique monster species during battle.</p>
 

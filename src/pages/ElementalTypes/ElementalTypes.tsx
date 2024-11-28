@@ -44,6 +44,8 @@ const ElementalTypes = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Elemental Types - Tapedeck</title>
+                <link rel="canonical" href="https://tapedeck.top/elementalTypes/" />
+                <meta name="description" content="In Cassette Beasts, every monster and move has an elemental type that defines its unique strengths, weaknesses, and abilities." />
             </Helmet>
 
             <p>Every monster and move has an elemental type that defines its unique strengths, weaknesses, and abilities. Monsters that differ in type from their typical species are known as <em>bootlegs</em>.</p>

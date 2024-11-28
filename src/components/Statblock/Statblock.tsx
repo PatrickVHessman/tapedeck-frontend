@@ -8,6 +8,8 @@ const Statblock = (props: { stats: Stats }) => {
     const table: string = "stats";
     Chart.register(ChartDataLabels);
 
+    const highStat: number = Math.max(props.stats.meleeAttack, props.stats.meleeDefense, props.stats.speed, props.stats.rangedAttack, props.stats.rangedDefense, props.stats.maxHp);
+
     const RadarData = {
         labels: ["Max HP", "Melee Attack", "Melee Defence", "Ranged Attack", "Ranged Defence", "Speed"],
         datasets: [
@@ -64,7 +66,7 @@ const Statblock = (props: { stats: Stats }) => {
                             lineWidth: 2
                         },
                         suggestedMin: 50,
-                        suggestedMax: 400,
+                        suggestedMax: highStat + 25,
                         ticks: {
                             display: false,
                         },
