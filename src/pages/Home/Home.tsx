@@ -48,7 +48,7 @@ const Home = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Home - Tapedeck</title>
-                <link rel="canonical" href="https://tapedeck.top/moves" />
+                <link rel="canonical" href="https://tapedeck.top" />
                 <meta name="description" content="Welcome to Tapedeck, an interactive and informational resource for Bytten Studios's monster collecting RPG Cassette Beasts. Learn about monsters and moves or experment with bootlegs and fusions!" />
                 <meta name="og:description" content="Welcome to Tapedeck, an interactive and informational resource for Bytten Studios's monster collecting RPG Cassette Beasts. Learn about monsters and moves or experment with bootlegs and fusions!" />
                 <meta name="og:title" content="Home - Tapedeck" />

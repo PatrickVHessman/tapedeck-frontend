@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Home\\Home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Home\\Home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -30,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Statblock.tsx",
               "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\components\\Statblock\\Statblock.tsx",
               "RelativeDocumentMoniker": "src\\components\\Statblock\\Statblock.tsx",
@@ -43,59 +51,32 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-11-28T04:33:47.042Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\vite.config.ts",
+              "RelativeDocumentMoniker": "vite.config.ts",
+              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\vite.config.ts",
+              "RelativeToolTip": "vite.config.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-29T19:29:36.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.tsx",
-              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Home\\Home.tsx",
-              "RelativeDocumentMoniker": "src\\pages\\Home\\Home.tsx",
-              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Home\\Home.tsx",
-              "RelativeToolTip": "src\\pages\\Home\\Home.tsx",
-              "ViewState": "AQIAACUAAAAAAAAAAAAAADUAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-28T04:47:29.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ElementalType.tsx",
-              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\ElementalTypes\\ElementalType.tsx",
-              "RelativeDocumentMoniker": "src\\pages\\ElementalTypes\\ElementalType.tsx",
-              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\ElementalTypes\\ElementalType.tsx",
-              "RelativeToolTip": "src\\pages\\ElementalTypes\\ElementalType.tsx",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-28T04:47:19.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Acknowledgements.tsx",
-              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Acknowledgements\\Acknowledgements.tsx",
-              "RelativeDocumentMoniker": "src\\pages\\Acknowledgements\\Acknowledgements.tsx",
-              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Acknowledgements\\Acknowledgements.tsx",
-              "RelativeToolTip": "src\\pages\\Acknowledgements\\Acknowledgements.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-28T04:47:13.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Fusions.tsx",
-              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Fusions\\Fusions.tsx",
-              "RelativeDocumentMoniker": "src\\pages\\Fusions\\Fusions.tsx",
-              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Fusions\\Fusions.tsx",
-              "RelativeToolTip": "src\\pages\\Fusions\\Fusions.tsx",
-              "ViewState": "AQIAAEQBAAAAAAAAAAAAAFwBAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-28T04:46:24.424Z",
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-29T19:28:06.66Z",
               "EditorCaption": ""
             },
             {
@@ -105,6 +86,55 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.tsx",
+              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Home\\Home.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\Home\\Home.tsx",
+              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Home\\Home.tsx",
+              "RelativeToolTip": "src\\pages\\Home\\Home.tsx",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAADIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-28T04:47:29.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ElementalType.tsx",
+              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\ElementalTypes\\ElementalType.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\ElementalTypes\\ElementalType.tsx",
+              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\ElementalTypes\\ElementalType.tsx",
+              "RelativeToolTip": "src\\pages\\ElementalTypes\\ElementalType.tsx",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-28T04:47:19.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Acknowledgements.tsx",
+              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Acknowledgements\\Acknowledgements.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\Acknowledgements\\Acknowledgements.tsx",
+              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Acknowledgements\\Acknowledgements.tsx",
+              "RelativeToolTip": "src\\pages\\Acknowledgements\\Acknowledgements.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-28T04:47:13.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Fusions.tsx",
+              "DocumentMoniker": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Fusions\\Fusions.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\Fusions\\Fusions.tsx",
+              "ToolTip": "C:\\Users\\krims\\Documents\\tapedeck\\frontend\\tapedeck-frontend\\src\\pages\\Fusions\\Fusions.tsx",
+              "RelativeToolTip": "src\\pages\\Fusions\\Fusions.tsx",
+              "ViewState": "AQIAAEQBAAAAAAAAAAAAAFwBAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-28T04:46:24.424Z"
             }
           ]
         }
